@@ -75,9 +75,9 @@ describe('test.qa.rs tests', function () {
         expect(await pageHomePage.isLogoutLinkDisplayed()).to.be.true;
     });
 
-    //it('Empty shopping cart', async function() {
-        //await pageCart.clickEmptyShoppingCart();
-    //})
+    it('Empty shopping cart', async function() {
+        await pageCart.clickEmptyShoppingCart();
+    });
 
     it('Adds item(s) to cart', async function() {
 
@@ -130,12 +130,12 @@ describe('test.qa.rs tests', function () {
         expect(await orderQuantity.getText()).to.eq(packageToAdd);
     });
 
-    //it('Performs checkout', async function() {
-        //await pageCart.clickOnCheckoutButton();
+    it('Performs checkout', async function() {
+        await pageCart.clickOnCheckoutButton();
 
-        //expect(await pageCheckout.getCurrentUrl()).to.be.eq('http://test.qa.rs/checkout');
-        //expect(await pageCheckout.getPageTitle()).to.contain('You have successfully placed your order.');
-    //});
+        expect(await pageCheckout.getCurrentUrl()).to.be.eq('http://test.qa.rs/checkout');
+        expect(await pageCheckout.getPageTitle()).to.contain('You have successfully placed your order.');
+    });
 
     it('Performs logout', async function() {
         await pageHomePage.clickOnLogoutLink();

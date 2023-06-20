@@ -18,9 +18,9 @@ module.exports = class HomePage extends BasePage {
         await registerLink.click();
     }
 
-    getSuccessAlertText() {
+/*    getSuccessAlertText() {
         return this.driver().findElement(By.className('alert alert-success')).getText();
-    }
+    }*/
 
     getWelcomeBackTittle() {
         return this.driver().findElement(By.tagName('h2')).getText();
