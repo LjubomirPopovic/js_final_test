@@ -19,7 +19,7 @@ describe('test.qa.rs tests', function () {
     let pageCheckout;
 
 
-    const packageToAdd = 'burger';
+    const packageToAdd = 'double burger';
     const packageSideDish = 'mozzarella sticks';
     const packageQuantity = '2';
 
